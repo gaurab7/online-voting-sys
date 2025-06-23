@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker'
 
-export function fptpCandidates(num)
+export function Candidates(num)
 {
     try{
         const parties = ['Democrat','Republican','Independent']
