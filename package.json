@@ -1,0 +1,32 @@
+{
+  "name": "election-sys-simulation",
+  "version": "1.0.0",
+  "description": "trying to simulate the same election in diff systems",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaurab7/election-sys-simulation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaurab7/election-sys-simulation/issues"
+  },
+  "homepage": "https://github.com/gaurab7/election-sys-simulation#readme",
+  "dependencies": {
+    "@faker-js/faker": "^9.8.0",
+    "chalk": "^5.4.1",
+    "express": "^5.1.0",
+    "inquirer": "^12.6.3"
+  },
+  "devDependencies": {
+    "jest": "^30.0.2",
+    "nodemon": "^3.1.10"
+  }
+}
