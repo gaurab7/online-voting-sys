@@ -1,4 +1,4 @@
-import { stVotes } from './src/generators/votes.js'
+import { stVotes } from './src/generators/voters.js'
 import { fptp } from './src/systems/fptp.js'
 
 const votes = (stVotes(100, 5))
