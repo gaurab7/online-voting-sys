@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon src/index.js"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,18 @@
   "homepage": "https://github.com/gaurab7/election-sys-simulation#readme",
   "dependencies": {
     "@faker-js/faker": "^9.8.0",
+    "bcrypt": "^6.0.0",
     "chalk": "^5.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "inquirer": "^12.6.3"
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "inquirer": "^12.6.3",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "path": "^0.12.7",
+    "tesseract.js": "^6.0.1"
   },
   "devDependencies": {
     "jest": "^30.0.2",
