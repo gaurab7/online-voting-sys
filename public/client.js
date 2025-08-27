@@ -6,6 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     bttnState.disabled = !imgUpload.files.length 
   })
+  bttnState.addEventListener('click', (e) => {
+    scanIMG()
+  })
+
+  function scanIMG(){
+    const id = imgUpload.files[0]
+    const formData = new FormData()
+    formData.append('id', id)
+    fetch('verify-id',{
+        method: 'POST',
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log(data)
+    })
+
+  }
 
 })
- console.log('ok')
