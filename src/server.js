@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import authRoutes from '../src/routes/authRoutes.js'
+import apiRoutes from '../src/routes/apiRoutes.js'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -19,6 +20,7 @@ const PORT = process.env.PORT || 8848
 
 //ROUTES
 app.use('/', authRoutes)
+app.use('/api', apiRoutes)
 
 //server start
 app.listen(PORT, ()=>{

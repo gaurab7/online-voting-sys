@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const id = imgUpload.files[0]
     const formData = new FormData()
     formData.append('id', id)
-    fetch('verify-id',{
+    document.getElementById('test').innerHTML = formData.get('id').name
+    fetch('/api/verify-id',{
         method: 'POST',
         body: formData
     })

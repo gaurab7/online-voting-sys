@@ -21,6 +21,7 @@
   "homepage": "https://github.com/gaurab7/election-sys-simulation#readme",
   "dependencies": {
     "@faker-js/faker": "^9.8.0",
+    "@zxing/library": "^0.21.3",
     "bcrypt": "^6.0.0",
     "chalk": "^5.4.1",
     "cors": "^2.8.5",
@@ -29,6 +30,7 @@
     "express-rate-limit": "^8.0.1",
     "helmet": "^8.1.0",
     "inquirer": "^12.6.3",
+    "jimp": "^1.6.0",
     "jsonwebtoken": "^9.0.2",
     "multer": "^2.0.2",
     "path": "^0.12.7",
