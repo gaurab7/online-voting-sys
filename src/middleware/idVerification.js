@@ -1,9 +1,4 @@
 import Tesseract from "tesseract.js"
-import Quagga from "@ericblade/quagga2"
-const JimpModule = await import('jimp')
-import fs from 'fs'
-
-const Jimp = JimpModule.default
 
 export async function verifyID(req, res) {
     try{
@@ -46,42 +41,6 @@ export async function verifyID(req, res) {
             return data 
           }
         console.log(extractStudentData(text))
-
-            //check barcode
-        async function checkBarcode(img){
-            try{
-                const imageBuffer = fs.readFileSync(img);
-        const base64Image = imageBuffer.toString('base64');
-                             //quagga to read the barcode
-           
-            Quagga.decodeSingle({
-                    src: 'data:image/jpeg;base64,' + base64Image, 
-                    numOfWorkers: 0,  // Needs to be 0 when used in node
-                    inputStream: {
-                        size: 1000  // restrict input-size to be 800px in width (long-side)
-                    },
-                    decoder: {
-                        readers: ["code_39_reader", "code_128_reader","code_39_vin_reader"] // reads code 39 barcodes which is what the id i am referencing uses
-                    }
-                },
-                    function(result){
-                        //result is the object returned by quagga
-                        // it has codeResult property which has the text value of the barcode
-                        //line, box and angle are othe properties
-                        if(result && result.codeResult){
-                            console.log(result)
-                        }
-                        else{
-                            console.log("not detected")
-                        }
-                    })
-            }
-            catch(err){
-                console.log(err)
-            }
-
-        }
-        await checkBarcode(idImage)
     }
     catch(err){
         console.log(err)
