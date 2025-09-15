@@ -1,55 +1,77 @@
-body{
-    background-color: antiquewhite;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar {
+/* Page layout */
+body {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    background: azure;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
-.logo {
-    align-items: right;
+/* Login box */
+#login-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
 }
 
-.menu-toggle {
-    display: none;/*only for mobile*/
+/* Title */
+#login-container legend {
     font-size: 1.5rem;
-    background: none;
-    border: none;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/* File input */
+#idIMG {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+/* Buttons */
+button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #4facfe;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.nav-links li{
-    gap: 20px;
+/* Hover effect */
+button:hover:enabled {
+    background: #007bff;
 }
 
+/* Disabled button */
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
 
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: azure;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-    .nav-links.show {
-        display: flex;
-    }
+/* Test div */
+#test {
+    margin-top: 1.2rem;
+    font-size: 0.9rem;
+    color: #444;
 }

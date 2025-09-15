@@ -1,0 +1,73 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Student {
+  id       Int      @id @default(autoincrement())
+  name     String
+  cardNo   String   @unique
+  roll     String   @unique
+  course   String
+  dob      DateTime
+  expiry   DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  votes     Vote[]
+  candidates Candidate[]
+}
+
+model Election {
+  id          Int       @id @default(autoincrement())
+  title       String
+  description String?
+  startDate   DateTime
+  endDate     DateTime
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  candidates  Candidate[]
+  votes       Vote[]
+}
+
+model Candidate {
+  id         Int       @id @default(autoincrement())
+  student    Student   @relation(fields: [studentId], references: [id])
+  studentId  Int
+  election   Election  @relation(fields: [electionId], references: [id])
+  electionId Int
+  position   String    
+  manifesto  String?   
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  votes      Vote[]
+
+  @@unique([studentId, electionId])
+}
+
+model Vote {
+  id          Int       @id @default(autoincrement())
+  student     Student   @relation(fields: [studentId], references: [id]) // so that we can access student table from the candidate itself(otherwiers would have to access student separately)
+  studentId   Int   // this gets its vlaue from the above command
+  candidate   Candidate @relation(fields: [candidateId], references: [id]) 
+  candidateId Int
+  election    Election  @relation(fields: [electionId], references: [id])
+  electionId  Int
+  createdAt   DateTime  @default(now())
+
+  @@unique([studentId, electionId])
+}

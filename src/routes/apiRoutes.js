@@ -3,6 +3,7 @@ import { verifyID } from '../middleware/idVerification.js'
 import path from 'path'
 import { fileURLToPath } from 'url' 
 import multer from "multer"
+import authroute from './authRoutes.js'
 
 const upload = multer({dest: "../../uploads"})
 
