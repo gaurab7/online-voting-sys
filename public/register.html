@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voeter Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container registration-container">
+    <form id="registrationForm" class="form-card">
+      <h2 class="form-title">Student Registration</h2>
+
+      <label for="regName" class="form-label">Full Name:</label>
+      <input type="text" id="regName" name="name" class="form-input" required>
+
+      <label for="regRoll" class="form-label">Roll No:</label>
+      <input type="text" id="regRoll" name="roll" class="form-input" required>
+
+      <label for="regCardNo" class="form-label">Card Number:</label>
+      <input type="text" id="regCardNo" name="cardNo" class="form-input" required>
+
+      <label for="regCourse" class="form-label">Course:</label>
+      <select id="regCourse" name="course" class="form-input" required>
+        <option value="">--Select Course--</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="BIT">BIT</option>
+        <option value="BIM">BIM</option>
+        <option value="BSc">BSc</option>
+      </select>
+
+      <label for="regSemester" class="form-label">Semester:</label>
+      <select id="regSemester" name="semester" class="form-input" required>
+        <option value="">--Select Semester--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+
+      <label for="regDOB" class="form-label">Date of Birth:</label>
+      <input type="date" id="regDOB" name="dob" class="form-input" required>
+
+      <label for="regExpiry" class="form-label">Card Expiry Date:</label>
+      <input type="date" id="regExpiry" name="expiry" class="form-input" required>
+
+      <label for="regPassword" class="form-label">Password:</label>
+      <input type="password" id="regPassword" name="password" class="form-input" required>
+
+      <button type="submit" class="form-button">Register</button>
+      <p class="form-link"><a href="login.html">Already have an account? Login</a></p>
+    </form>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>

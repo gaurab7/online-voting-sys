@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voeter Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voeter Login</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="login-container">
-        <form id="loginForm">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+  <div class="form-container login-container">
+    <form id="loginForm" class="form-card">
+      <h2 class="form-title">Login</h2>
 
-            <label for="course">Course:</label><br>
-            <select id="course" name="course" required>
-                <optgroup label="Select Course">
-                    <option value="">--Select Course--</option>
-                    <option value="BCA">BCA</option>
-                    <option value="BBA">BBA</option>
-                    <option value="BIT">BIT</option>
-                    <option value="BIM">BIM</option>
-                    <option value="BSc">BSc</option>
-                </optgroup>
-            </select><br><br>
+      <label for="loginName" class="form-label">Name:</label>
+      <input type="text" id="loginName" name="name" class="form-input" required>
 
-            <label for="semester">Semester:</label><br>
-            <select id="semester" name="semester" required>
-                <optgroup label="Select Semester">
-                    <option value="">--Select Semester--</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </optgroup>
-            </select><br><br>
+      <label for="loginCourse" class="form-label">Course:</label>
+      <select id="loginCourse" name="course" class="form-input" required>
+        <option value="">--Select Course--</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+        <option value="BIT">BIT</option>
+        <option value="BIM">BIM</option>
+        <option value="BSc">BSc</option>
+      </select>
 
-            <label for="roll">Roll No:</label><br>
-            <input type="text" id="roll" name="roll" required><br><br>
+      <label for="loginSemester" class="form-label">Semester:</label>
+      <select id="loginSemester" name="semester" class="form-input" required>
+        <option value="">--Select Semester--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
 
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password" required><br><br>
+      <label for="loginRoll" class="form-label">Roll No:</label>
+      <input type="text" id="loginRoll" name="roll" class="form-input" required>
 
-            <button type="submit">Login</button>
-        </form>
-        <br>
-        <label for="idIMG">Or Scan ID Image:</label><br>
-        <input type="file" id="idIMG" accept="image/*"><br><br>
-        <button id="scanIMG" disabled onclick="scanIMG()">Scan ID Image</button>
+      <label for="loginPassword" class="form-label">Password:</label>
+      <input type="password" id="loginPassword" name="password" class="form-input" required>
 
-    </div>
+      <button type="submit" class="form-button">Login</button>
 
-    <script src="/client.js"></script>
+      <div class="id-scan-section">
+        <label for="idIMG">Or Scan ID Image:</label>
+        <input type="file" id="idIMG" accept="image/*" class="form-input-file">
+        <button id="scanIMG" class="form-button" disabled onclick="scanIMG()">Scan ID Image</button>
+      </div>
+
+      <p class="form-link"><a href="register.html">New User? Register Here</a></p>
+    </form>
+  </div>
+
+  <script src="/client.js"></script>
 </body>
 </html>

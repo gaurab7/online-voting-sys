@@ -14,6 +14,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Role {
+  USER
+  ADMIN
+}
+
 model Student {
   id       Int      @id @default(autoincrement())
   name     String
@@ -26,6 +31,7 @@ model Student {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  role     Role      @default(USER)
 
   votes     Vote[]
   candidates Candidate[]
