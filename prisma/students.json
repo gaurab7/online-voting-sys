@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Gaurav Munankarmi",
+    "cardNo": "022100",
+    "roll": "BIT 16/80",
+    "course": "BIT",
+    "dob": "2062-04-28",
+    "expiry": "2084-8-30",
+    "semester": 4
+  },
+  {
+    "name": "Nisha Shrestha",
+    "cardNo": "C1012",
+    "roll": "R012",
+    "course": "BIT",
+    "dob": "2058-09-20",
+    "expiry": "2080-09-20",
+    "semester": 8
+  },
+  {
+    "name": "Sandeep Lama",
+    "cardNo": "C1013",
+    "roll": "R013",
+    "course": "BBA",
+    "dob": "2059-04-05",
+    "expiry": "2081-04-05",
+    "semester": 7
+  },
+  {
+    "name": "Pratiksha Rai",
+    "cardNo": "C1014",
+    "roll": "R014",
+    "course": "CSIT",
+    "dob": "2061-11-12",
+    "expiry": "2083-11-12",
+    "semester": 5
+  },
+  {
+    "name": "Bibek Khadka",
+    "cardNo": "C1015",
+    "roll": "R015",
+    "course": "BIT",
+    "dob": "2057-06-28",
+    "expiry": "2079-06-28",
+    "semester": 8
+  },
+  {
+    "name": "Alisha Koirala",
+    "cardNo": "C1016",
+    "roll": "R016",
+    "course": "BBA",
+    "dob": "2060-03-17",
+    "expiry": "2082-03-17",
+    "semester": 6
+  },
+  {
+    "name": "Rohit Thapa",
+    "cardNo": "C1017",
+    "roll": "R017",
+    "course": "CSIT",
+    "dob": "2062-07-09",
+    "expiry": "2084-07-09",
+    "semester": 4
+  },
+  {
+    "name": "Sneha Maharjan",
+    "cardNo": "C1018",
+    "roll": "R018",
+    "course": "BIT",
+    "dob": "2063-02-14",
+    "expiry": "2085-02-14",
+    "semester": 2
+  },
+  {
+    "name": "Kiran Shahi",
+    "cardNo": "C1019",
+    "roll": "R019",
+    "course": "BBA",
+    "dob": "2056-08-22",
+    "expiry": "2078-08-22",
+    "semester": 8
+  },
+  {
+    "name": "Maya Gurung",
+    "cardNo": "C1020",
+    "roll": "R020",
+    "course": "CSIT",
+    "dob": "2061-01-10",
+    "expiry": "2083-01-10",
+    "semester": 6
+  },
+  {
+    "name": "Sujan Basnet",
+    "cardNo": "C1021",
+    "roll": "R021",
+    "course": "BIT",
+    "dob": "2060-11-03",
+    "expiry": "2082-11-03",
+    "semester": 5
+  },
+  {
+    "name": "Pooja Shah",
+    "cardNo": "C1022",
+    "roll": "R022",
+    "course": "BBA",
+    "dob": "2062-04-25",
+    "expiry": "2084-04-25",
+    "semester": 3
+  },
+  {
+    "name": "Anil Adhikari",
+    "cardNo": "C1023",
+    "roll": "R023",
+    "course": "CSIT",
+    "dob": "2059-05-18",
+    "expiry": "2081-05-18",
+    "semester": 7
+  },
+  {
+    "name": "Shreya Shakya",
+    "cardNo": "C1024",
+    "roll": "R024",
+    "course": "BIT",
+    "dob": "2057-12-30",
+    "expiry": "2079-12-30",
+    "semester": 8
+  },
+  {
+    "name": "Krishna Bhatta",
+    "cardNo": "C1025",
+    "roll": "R025",
+    "course": "BBA",
+    "dob": "2063-09-02",
+    "expiry": "2085-09-02",
+    "semester": 2
+  },
+  {
+    "name": "Manish Karki",
+    "cardNo": "C1026",
+    "roll": "R026",
+    "course": "CSIT",
+    "dob": "2058-02-11",
+    "expiry": "2080-02-11",
+    "semester": 8
+  },
+  {
+    "name": "Sarita Poudel",
+    "cardNo": "C1027",
+    "roll": "R027",
+    "course": "BIT",
+    "dob": "2061-07-06",
+    "expiry": "2083-07-06",
+    "semester": 5
+  },
+  {
+    "name": "Deepak Magar",
+    "cardNo": "C1028",
+    "roll": "R028",
+    "course": "BBA",
+    "dob": "2056-04-13",
+    "expiry": "2078-04-13",
+    "semester": 8
+  },
+  {
+    "name": "Ritu Sharma",
+    "cardNo": "C1029",
+    "roll": "R029",
+    "course": "CSIT",
+    "dob": "2064-01-21",
+    "expiry": "2086-01-21",
+    "semester": 1
+  },
+  {
+    "name": "Prabin Joshi",
+    "cardNo": "C1030",
+    "roll": "R030",
+    "course": "BIT",
+    "dob": "2062-10-08",
+    "expiry": "2084-10-08",
+    "semester": 4
+  }
+]
